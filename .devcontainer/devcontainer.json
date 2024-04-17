@@ -1,0 +1,10 @@
+{
+  "name": "devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:1.0.22-ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1.4.2": {
+      "version": "3.9"
+    }
+  },
+  "postCreateCommand": { "install": ["pip", "install", "-e", "."] },
+}
